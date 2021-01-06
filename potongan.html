@@ -130,7 +130,7 @@
       </h1>
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> Karyawan</a></li>
-        <li class="active">Data Karyawan</li>
+        <li class="active">Potongan</li>
       </ol>
     </section>
 
@@ -139,24 +139,12 @@
     <section class="content">
       <div class="box box-primary">
         <div class="box-header with-border">
-          <h3 class="box-title">Data Gaji</h3>
+          <h3 class="box-title">Potongan Gaji</h3>
         </div>
-        <div class="box-body">
-          <div class="row">
-            <div class="col-xs-2">
-              <input type="text" class="form-control" placeholder="Bulan...">
-            </div>
-            <div class="col-xs-2">
-              <input type="text" class="form-control" placeholder="Tahun...">
-            </div>
-            <div class="col-xs-3">
-              <input type="text" class="form-control" placeholder="Pencarian...">
-            </div>
-          </div>
-        </div>
+      
         <!--Button Input Gaji-->
         <div class="box-footer">
-           <button type="submit" class="btn btn-primary" data-toggle="modal"  data-target="#modal-default" ><b>+</b> Input Gaji</button>
+           <button type="submit" class="btn btn-primary" data-toggle="modal"  data-target="#modal-default" ><b>-</b> Potong Gaji</button>
          </div>  
 
          <div class="modal fade" id="modal-default">
@@ -169,16 +157,16 @@
               </div>
               <div class="modal-body">
                 <div class="form-group">
-                  <label for="exampleInputEmail1">ID Karyawan</label>
-                  <input type="input"  class="form-control" id="idkaryawan" name="idkaryawan">
+                  <label for="exampleInputEmail1">Kode Potongan</label>
+                  <input type="input"  class="form-control" id="kodepotongan" name="kodepotongan">
                 </div>
                 <div class="form-group">
-                  <label for="exampleInputEmail1">Tanggal Gaji</label>
-                  <input type="date"  class="form-control" id="tglgaji" name="tglgaji">
+                  <label for="exampleInputEmail1">Nama Potongan</label>
+                  <input type="input"  class="form-control" id="namapotongan" name="namapotongan">
                 </div>
                 <div class="form-group">
-                  <label for="exampleInputEmail1">Gaji Bersih</label>
-                  <input type="Input"  class="form-control" id="gajibersih" name="gajibersih">
+                  <label for="exampleInputEmail1">Jumlah Potongan</label>
+                  <input type="input"  class="form-control" id="jumlahpotongan" name="jumlahpotongan">
                 </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
@@ -198,32 +186,25 @@
           <table id="example1" class="table table-bordered table-striped">
             <thead>
             <tr>
-              <th>ID Gaji</th>
-              <th>Tanggal Gaji</th>
-              <th>Gaji Bersih</th>
+              <th>Kode Potongan</th>
+              <th>Nama Potongan</th>
+              <th>Jumlah Potongan</th>
               <th> Action </th>
             </tr>
             </thead>
             <tbody>
             <tr>
               <td>1</td>
-              <td>03/12/2020</td>
-              <td>3600000</td>
+              <td>Potongan Kehadiran</td>
+              <td>50000</td>
               <td>
-                <a class="btn btn-social-icon" title="potongan" ><i class="fa fa-scissors"data-toggle="modal" href="potongan.html"></i></a>
+ 
                 <a class="btn btn-social-icon" title="edit" ><i class="fa fa-edit"data-toggle="modal" href="#"></i></a>
                 <a class="btn btn-social-icon" title="hapus" ><i class="fa fa-bitbucket"data-toggle="modal" href="#"></i></a>
               </td>
             </tr>
-            <td>2</td>
-            <td>04/12/2020</td>
-            <td>4000000</td>
-            <td>
-              <a class="btn btn-social-icon" title="potongan" ><i class="fa fa-scissors"data-toggle="modal" href="potongan.html"></i></a>
-              <a class="btn btn-social-icon" title="edit" ><i class="fa fa-edit"data-toggle="modal" href="#"></i></a>
-              <a class="btn btn-social-icon" title="hapus" ><i class="fa fa-bitbucket"data-toggle="modal" href="#"></i></a>
-            </td>
-          </tr>
+
+
   
             </tfoot>
           </table>
